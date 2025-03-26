@@ -7,7 +7,7 @@ export default {
             links: [
                 {
                     label: 'Learn More',
-                    path: 'PortfolioSite/#/marketplace/more_enchantment_addon'
+                    path: '/#/marketplace/more_enchantment_addon'
                 },
                 {
                     label: 'Download',
@@ -22,7 +22,7 @@ export default {
             links: [
                 {
                     label: 'Learn More',
-                    path: 'PortfolioSite/#/marketplace/theia_dimension'
+                    path: '/#/marketplace/theia_dimension'
                 },
                 {
                     label: 'Download',
@@ -105,7 +105,7 @@ export default {
             links: [
                 {
                     label: 'Learn More',
-                    path: 'PortfolioSite/#/school/knotsapp'
+                    path: '/#/school/knotsapp'
                 }
             ]
         }
