@@ -3,8 +3,6 @@ import './style.css'
 import App from './App.vue'
 import router from './services/router';
 
-console.log('vue app starting')
-
 const app = createApp(App);
 app.use(router);
 app.mount('#app');
