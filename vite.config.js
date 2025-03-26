@@ -4,6 +4,7 @@ import path from 'path'
 import Markdown from 'unplugin-vue-markdown/vite'
 
 export default defineConfig({
+  base: '/PortfolioSite',
   plugins: [
     vue({
       include: [/\.vue$/, /\.md$/]
