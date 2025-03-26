@@ -1,4 +1,53 @@
 export default {
+    experiences: [
+        {
+            name: 'Lead Developer at Eternal Creations',
+            tags: ['Sep 2024-Present', 'Eternal Creations'],
+            description: 'Lead developer working on Minecraft Marketplace content.',
+            links: [
+                { label: 'Learn More', path: 'https://eternalcreations.games' }
+            ]
+        },
+        {
+            name: 'BSc Computer Science With CyberSecurity',
+            tags: ['2024-Present'],
+            description: 'Currently in year 3 of studying computer science and cyber security.'
+        },
+        {
+            name: 'HND Computing Science and Cyber Security',
+            tags: ['Aug 2023-May 2024'],
+            description: 'Completed a HND in computing science and cyber security.'
+        },
+        {
+            name: 'Developer at Rareloot',
+            tags: ['Aug 2023-May 2024', 'Rareloot'],
+            description: 'Worked on Minecraft Marketplace content.',
+            links: [{ label: 'Learn More', path: 'https://www.rareloot.at' }]
+        },
+        {
+            name: 'Developer at Lore Studios',
+            tags: ['Sep 2022-Jan 2023'],
+            description: 'Worked on Minecraft Marketplace content.',
+            links: [{ label: 'Learn More', path: 'https://www.pikistudios.com' }]
+        },
+        {
+            name: 'Developer at Radium Studios',
+            tags: ['Nov 2022-Sep 2023', 'Radium Studios'],
+            description: 'Worked on Minecraft Marketplace content that was never released due to a lack of funding.',
+        },
+        {
+            name: 'Developer at Eternal Creations',
+            tags: ['Nov 2022-Sep 2024', 'Eternal Creations'],
+            description: 'Worked on Minecraft Marketplace content until I was prompoted in 2024.',
+            links: [{ label: 'Learn More', path: 'https://eternalcreations.games' }]
+        },
+        {
+            name: 'Netacad CCNAv7',
+            tags: ['May 2022-Mar 2023'],
+            description: 'Achieved a certification in networking.',
+            links: [{ label: 'Learn More', path: 'https://www.netacad.com' }]
+        }
+    ],
     marketplace: [
         {
             name: 'More Enchantments',
@@ -94,6 +143,14 @@ export default {
                     label: 'Download',
                     path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=8fe9f5e2-d41b-49aa-82ee-3b5e6751ebd3'
                 }
+            ]
+        },
+        {
+            name: 'Adopt Me',
+            tags: ['Map', '2023', 'Enchanted'],
+            description: 'Worked as a freelance developer for Enchanted where I bug fixed one of their maps',
+            links: [
+                { label: 'Download', path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=83c314cf-6435-4a13-99ac-73fa2960498d' }
             ]
         }
     ],
