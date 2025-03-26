@@ -2,12 +2,15 @@
     <main class="content-wrapper">
         <header class="hero-card">
             <div class="hero-content">
-                <h1>Portfolio</h1>
+                <h1>HarryF1204</h1>
                 <p class="subtitle">Software Developer & Cyber Security Student</p>
                 <div class="tags">
                     <Tag>Full Stack</Tag>
-                    <Tag>Web Development</Tag>
-                    <Tag>Problem Solving</Tag>
+                    <Tag>Web App Development</Tag>
+                    <Tag>Bedrock Development</Tag>
+                    <Tag>TS</Tag>
+                    <Tag>JS</Tag>
+                    <Tag>Python</Tag>
                 </div>
                 <CollapsibleText>
                     I am a passionate Minecraft Bedrock Developer with four years of experience and am currently
