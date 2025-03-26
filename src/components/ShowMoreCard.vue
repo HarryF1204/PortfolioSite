@@ -34,4 +34,15 @@ import Card from '@/components/Card.vue';
     color: #666;
     display: block;
 }
+
+@media (max-width: 480px) {
+    .show-more-content {
+        min-height: 5rem;
+    }
+
+    :deep(.content-container) {
+        max-height: none !important;
+        overflow: hidden !important;
+    }
+}
 </style>

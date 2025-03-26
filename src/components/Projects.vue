@@ -89,4 +89,18 @@ const filteredProjects = computed(() => {
 .card-link:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 480px) {
+    .cards-grid {
+        gap: 0.5rem;
+    }
+
+    .card-link {
+        font-size: 0.9rem;
+    }
+
+    .card-height {
+        min-height: auto;
+    }
+}
 </style>

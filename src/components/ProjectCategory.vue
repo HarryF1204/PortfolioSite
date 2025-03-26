@@ -93,4 +93,39 @@ const loadMore = () => {
     max-height: none;
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .category-header {
+        padding: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .category-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-grid {
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .category-header {
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .toggle-btn {
+        font-size: 1rem;
+    }
+}
 </style>

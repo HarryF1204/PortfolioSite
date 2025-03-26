@@ -78,8 +78,45 @@ const router = useRouter();
     }
 
     .project-view {
-        padding: 2rem;
+        padding: 1.5rem;
         margin: 1rem;
+        border-radius: 6px;
+    }
+
+    .article {
+        margin: 1rem auto;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .article :deep(h3) {
+        font-size: 1.25rem;
+    }
+
+    .article :deep(p) {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-view {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .article :deep(h2) {
+        font-size: 1.5rem;
+    }
+
+    .article :deep(h3) {
+        font-size: 1.15rem;
+    }
+
+    .article :deep(p) {
+        font-size: 0.9rem;
     }
 }
 </style>

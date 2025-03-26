@@ -88,4 +88,57 @@ export default {
 .content-container p {
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    .card-content {
+        padding: 1.25rem;
+        gap: 0.5rem;
+    }
+
+    .title-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .content-container {
+        font-size: 0.95rem;
+    }
+
+    .tags-container {
+        min-height: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-content {
+        padding: 0.75rem;
+        gap: 0.25rem;
+    }
+
+    .title-section {
+        min-height: 1.75rem;
+    }
+
+    .tags-container {
+        min-height: 1.5rem;
+    }
+
+    .content-container {
+        max-height: 6.5rem;
+        overflow-y: auto;
+    }
+
+    .card-wrapper {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .card-wrapper:hover {
+        margin-top: 0;
+        margin-bottom: 6px;
+    }
+
+    .links-container {
+        gap: 0.75rem;
+    }
+}
 </style>

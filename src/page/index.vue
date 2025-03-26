@@ -158,4 +158,54 @@ const filteredCategories = computed(() => {
     padding: 1rem 0;
     z-index: 10;
 }
+
+@media (max-width: 768px) {
+    .hero-card {
+        padding: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .content-wrapper {
+        margin: 1rem auto;
+        padding: 0 1rem;
+    }
+
+    #projects {
+        padding: 1rem;
+    }
+
+    .project-controls {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+        padding: 0.5rem 0;
+    }
+
+    .category-filters {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.25rem 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-card {
+        padding: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+}
 </style>

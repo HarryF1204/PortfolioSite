@@ -20,9 +20,9 @@
 </script>
 
 # Knots App
-
+WIP
 <Tag>test text</Tag>
 
-<YoutubeEmbed videoId="zAEb0tSz0T0"/>
+<!-- <YoutubeEmbed videoId="zAEb0tSz0T0"/> -->
 
 <Slideshow :images="images" />
