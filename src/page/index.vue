@@ -70,6 +70,7 @@ const expandedCategory = ref(null); // Changed from 'experiences' to null
 
 const setActiveCategory = (category) => {
     activeCategory.value = category;
+    expandedCategory.value = category === 'all' ? null : category;
 };
 
 const toggleCategory = (categoryType) => {
