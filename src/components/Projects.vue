@@ -29,6 +29,7 @@ const filteredProjects = computed(() => {
 </script>
 
 <template>
+
     <template v-for="(card, index) in filteredProjects" :key="index">
         <Card class="card-height">
             <template v-slot:title>
@@ -44,14 +45,48 @@ const filteredProjects = computed(() => {
             </template>
 
             <template v-slot:links>
-                <a :href="card.link" class="card-link">View Project</a>
+                <a v-for="link in card.links" :key="link.path" :href="link.path" class="card-link">
+                    {{ link.label }}
+                </a>
             </template>
         </Card>
     </template>
+
 </template>
 
 <style scoped>
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .card-height {
-    min-height: 12.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-link {
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.card-link:hover {
+    text-decoration: underline;
 }
 </style>

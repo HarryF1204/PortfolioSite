@@ -1,9 +1,15 @@
-import { loadMarkdown } from '@services/markdown';
+import MarkdownWrapper from '../../components/MarkdownWrapper.vue'
 
 export default [
     {
-        path: '/school/knotsapp',
-        name: 'KnotsApp',
-        component: () => loadMarkdown('school/knotsapp')
+        path: '/school',
+        component: MarkdownWrapper,
+        children: [
+            {
+                path: 'knotsapp',
+                name: 'KnotsApp',
+                component: () => import('./knotsapp.md')
+            }
+        ]
     }
 ]

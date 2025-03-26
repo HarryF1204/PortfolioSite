@@ -10,7 +10,21 @@
                     <Tag>Problem Solving</Tag>
                 </div>
                 <CollapsibleText>
-                    Temp text
+                    I am a passionate Minecraft Bedrock Developer with four years of experience and am currently
+                    employed as the lead developer at Eternal Creations. Being proficient in every stable aspect of
+                    bedrock modding, I specialize in pushing the limits of what's possible while maintaining high
+                    quality standards in my projects.<br><br>
+
+                    To hone my skills, I have worked with multiple Bedrock Marketplace studios, regularly assisting
+                    developers on the Bedrock Addons discord with their issues.<br><br>
+
+                    My notable projects like Theia Dimension and More Enchantments showcase my ability to produce
+                    high-quality, immersive content.<br><br>
+
+                    My technical innovations include mapping out bedrock material configurations through black-box
+                    testing and in-depth research which allowed me to produce free to use material documentation
+                    available on my GitHub. This project allowed me to create visual feats like portal-view rendering
+                    and a custom entity-based skybox.
                 </CollapsibleText>
             </div>
         </header>

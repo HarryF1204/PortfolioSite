@@ -84,13 +84,13 @@ const loadMore = () => {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     max-height: 0;
-    overflow: hidden;
     opacity: 0;
     transition: all 0.3s ease;
+    overflow: visible;
 }
 
 .project-grid.expanded {
-    max-height: 2000px;
+    max-height: none;
     opacity: 1;
 }
 </style>

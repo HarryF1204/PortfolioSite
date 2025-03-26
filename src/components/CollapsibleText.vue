@@ -1,8 +1,7 @@
 <template>
     <div class="bio-wrapper" :class="{ expanded }">
         <p class="bio">
-            <span class="text-content">
-                {{ expanded ? fullText : truncatedText }}
+            <span class="text-content" v-html="expanded ? fullText : truncatedText">
             </span>
             <span style="display: none" ref="contentRef">
                 <slot />
@@ -33,13 +32,18 @@ const showButton = computed(() => {
 });
 
 onMounted(() => {
-    fullText.value = contentRef.value?.textContent?.trim() ?? '';
+    fullText.value = contentRef.value?.innerHTML?.trim() ?? '';
 });
 
 const truncatedText = computed(() => {
-    const words = fullText.value.split(' ');
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = fullText.value;
+    const words = tempDiv.textContent.split(' ');
     if (words.length <= props.wordsToShow) return fullText.value;
-    return words.slice(0, props.wordsToShow).join(' ') + '...';
+
+    const truncated = words.slice(0, props.wordsToShow).join(' ') + '...';
+    tempDiv.textContent = truncated;
+    return tempDiv.textContent;
 }); 
 </script>
 
