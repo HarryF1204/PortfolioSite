@@ -46,7 +46,7 @@
 
             <div class="project-category">
                 <ProjectCategory v-for="category in filteredCategories" :key="category.type" :title="category.title"
-                    :type="category.type" />
+                    :type="category.type" :isExpanded="expandedCategory === category.type" @toggle="toggleCategory" />
             </div>
         </section>
     </main>
@@ -66,9 +66,14 @@ const categories = [
 ];
 
 const activeCategory = ref('all');
+const expandedCategory = ref(null); // Changed from 'experiences' to null
 
 const setActiveCategory = (category) => {
     activeCategory.value = category;
+};
+
+const toggleCategory = (categoryType) => {
+    expandedCategory.value = expandedCategory.value === categoryType ? null : categoryType;
 };
 
 const filteredCategories = computed(() => {

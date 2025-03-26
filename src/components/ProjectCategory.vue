@@ -1,5 +1,5 @@
 <template>
-    <div class="category-header" @click="toggleExpanded">
+    <div class="category-header" @click="$emit('toggle', type)">
         <h3>{{ title }}</h3>
         <button class="toggle-btn no-select" aria-label="Toggle category">
             <span class="arrow" :class="{ 'arrow-collapsed': !isExpanded }">▼</span>
@@ -24,11 +24,14 @@ defineProps({
     type: {
         type: String,
         required: true
+    },
+    isExpanded: {
+        type: Boolean,
+        required: true
     }
 });
 
-const isExpanded = ref(true);
-const toggleExpanded = () => isExpanded.value = !isExpanded.value;
+defineEmits(['toggle']);
 
 const INITIAL_ITEMS = 5;
 const LOAD_MORE_COUNT = 6;
@@ -86,12 +89,19 @@ const loadMore = () => {
     max-height: 0;
     opacity: 0;
     transition: all 0.3s ease;
-    overflow: visible;
+    overflow: hidden;
+    pointer-events: none;
+    position: relative;
+    visibility: hidden;
 }
 
 .project-grid.expanded {
     max-height: none;
     opacity: 1;
+    pointer-events: auto;
+    /* Re-enable interactions */
+    visibility: visible;
+    /* Make visible again */
 }
 
 @media (max-width: 768px) {
