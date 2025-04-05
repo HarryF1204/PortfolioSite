@@ -237,6 +237,17 @@ export default {
             ]
         },
         {
+            name: 'Bedrock Micro Addons',
+            tags: ['Minecraft', 'Addon'],
+            description: 'A collection of small addons POCs that add new features to Minecraft.',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: '/PortfolioSite/#/personal/bedrock_micro_addons'
+                }
+            ]
+        },
+        {
             name: 'bedrockAPI',
             tags: ['Python', 'Websockets', 'Minecraft'],
             description: 'A python package for interacting with Minecraft Bedrock via a websocket hook.',
