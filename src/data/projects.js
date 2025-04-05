@@ -1,4 +1,59 @@
 export default {
+    featured: [
+        {
+            name: 'Lead Developer at Eternal Creations',
+            tags: ['Sep 2024-Present', 'Eternal Creations'],
+            description: 'Lead developer working on Minecraft Marketplace content.',
+            links: [
+                { label: 'Learn More', path: 'https://eternalcreations.games' }
+            ]
+        },
+        {
+            name: 'The Bedrock Notebook',
+            tags: ['Documentation', 'Minecraft', 'Vitepress'],
+            description: 'A documentation site containing advanced and previously undocumented aspects of the Bedrock modding environment.',
+            links: [
+                {
+                    label: 'Visit',
+                    path: 'https://harryf1204.github.io/Bedrock-Notebook/'
+                },
+                {
+                    label: 'GitHub',
+                    path: 'https://github.com/HarryF1204/Bedrock-Notebook'
+                }
+            ]
+        },
+        {
+            name: 'More Enchantments',
+            tags: ['Addon', '2025', 'Eternal Creations'],
+            description: 'A Minecraft mod that adds a variety of new enchantments.',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: '/PortfolioSite/#/marketplace/more_enchantment_addon'
+                },
+                {
+                    label: 'Download',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=dfa41d12-3d83-4e4c-b3f0-dd5e91e85340'
+                }
+            ]
+        },
+        {
+            name: 'Theia Dimension',
+            tags: ['Map', '2024', 'Eternal Creations'],
+            description: 'Adds a new dimension to minecraft with new biomes, mobs, and structures.',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: '/PortfolioSite/#/marketplace/theia_dimension'
+                },
+                {
+                    label: 'Download',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=c3ae311a-5209-495d-b019-985aecb952dd'
+                }
+            ]
+        }
+    ],
     experiences: [
         {
             name: 'Lead Developer at Eternal Creations',
@@ -156,6 +211,21 @@ export default {
     ],
     personal: [
         {
+            name: 'The Bedrock Notebook',
+            tags: ['Documentation', 'Minecraft', 'Vitepress'],
+            description: 'A documentation site containing advanced and previously undocumented aspects of the Bedrock modding environment.',
+            links: [
+                {
+                    label: 'Visit',
+                    path: 'https://harryf1204.github.io/Bedrock-Notebook/'
+                },
+                {
+                    label: 'GitHub',
+                    path: 'https://github.com/HarryF1204/Bedrock-Notebook'
+                }
+            ]
+        },
+        {
             name: 'Knotsapp',
             tags: ['Vue.js', 'Node.js', 'Express', 'Websockets', 'Azure', 'CosmosDB'],
             description: 'A secure messaging app with E2EE and ephemeral keys.',
@@ -163,6 +233,17 @@ export default {
                 {
                     label: 'Learn More',
                     path: '/PortfolioSite/#/school/knotsapp'
+                }
+            ]
+        },
+        {
+            name: 'bedrockAPI',
+            tags: ['Python', 'Websockets', 'Minecraft'],
+            description: 'A python package for interacting with Minecraft Bedrock via a websocket hook.',
+            links: [
+                {
+                    label: 'GitHub',
+                    path: 'https://github.com/HarryF1204/bedrockAPI'
                 }
             ]
         }

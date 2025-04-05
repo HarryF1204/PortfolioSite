@@ -59,6 +59,7 @@ import ProjectCategory from '@components/ProjectCategory.vue';
 import CollapsibleText from '@components/CollapsibleText.vue';
 
 const categories = [
+    { title: 'Featured', type: 'featured' },
     { title: 'Experiences', type: 'experiences' },
     { title: 'Marketplace Projects', type: 'marketplace' },
     { title: 'Personal Projects', type: 'personal' },
@@ -66,7 +67,7 @@ const categories = [
 ];
 
 const activeCategory = ref('all');
-const expandedCategory = ref(null); // Changed from 'experiences' to null
+const expandedCategory = ref('featured');
 
 const setActiveCategory = (category) => {
     activeCategory.value = category;
