@@ -62,8 +62,7 @@ const categories = [
     { title: 'Featured', type: 'featured' },
     { title: 'Experiences', type: 'experiences' },
     { title: 'Marketplace Projects', type: 'marketplace' },
-    { title: 'Personal Projects', type: 'personal' },
-    { title: 'Tools', type: 'tools' }
+    { title: 'Personal Projects', type: 'personal' }
 ];
 
 const activeCategory = ref('all');
