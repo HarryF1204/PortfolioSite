@@ -113,7 +113,6 @@ const filteredCategories = computed(() => {
 
 <style scoped>
 .hero-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     padding: 3.5rem 2rem;
@@ -146,10 +145,7 @@ const filteredCategories = computed(() => {
     transition: transform 0.3s ease;
 }
 
-.hero-name span {
-    color: #4299e1;
-    -webkit-text-fill-color: #4299e1;
-}
+
 
 .hero-name:hover {
     transform: translateY(-2px);
