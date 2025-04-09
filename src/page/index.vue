@@ -241,7 +241,7 @@ const filteredCategories = computed(() => {
 }
 
 #projects {
-    padding: 2rem 2rem;
+    padding: 2rem 0.5rem;
 }
 
 .category-filters {
