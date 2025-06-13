@@ -1,63 +1,8 @@
 export default {
-    featured: [
-        {
-            name: 'Lead Developer at Eternal Creations',
-            tags: ['Sep 2024-Present', 'Eternal Creations'],
-            description: 'Lead developer working on Minecraft Marketplace content.',
-            links: [
-                { label: 'Learn More', path: 'https://eternalcreations.games' }
-            ]
-        },
-        {
-            name: 'The Bedrock Notebook',
-            tags: ['Documentation', 'Minecraft', 'Vitepress'],
-            description: 'A documentation site containing advanced and previously undocumented aspects of the Bedrock modding environment.',
-            links: [
-                {
-                    label: 'Visit',
-                    path: 'https://harryf1204.github.io/Bedrock-Notebook/'
-                },
-                {
-                    label: 'GitHub',
-                    path: 'https://github.com/HarryF1204/Bedrock-Notebook'
-                }
-            ]
-        },
-        {
-            name: 'More Enchantments',
-            tags: ['Addon', '2025', 'Eternal Creations'],
-            description: 'A Minecraft mod that adds a variety of new enchantments.',
-            links: [
-                {
-                    label: 'Learn More',
-                    path: '/PortfolioSite/#/marketplace/more_enchantment_addon'
-                },
-                {
-                    label: 'Download',
-                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=dfa41d12-3d83-4e4c-b3f0-dd5e91e85340'
-                }
-            ]
-        },
-        {
-            name: 'Theia Dimension',
-            tags: ['Map', '2024', 'Eternal Creations'],
-            description: 'Adds a new dimension to minecraft with new biomes, mobs, and structures.',
-            links: [
-                {
-                    label: 'Learn More',
-                    path: '/PortfolioSite/#/marketplace/theia_dimension'
-                },
-                {
-                    label: 'Download',
-                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=c3ae311a-5209-495d-b019-985aecb952dd'
-                }
-            ]
-        }
-    ],
     experiences: [
         {
             name: 'Lead Developer at Eternal Creations',
-            tags: ['Sep 2024-Present', 'Eternal Creations'],
+            tags: ['Work'],
             description: 'Lead developer working on Minecraft Marketplace content.',
             links: [
                 { label: 'Learn More', path: 'https://eternalcreations.games' }
@@ -65,40 +10,40 @@ export default {
         },
         {
             name: 'BSc Computer Science With CyberSecurity',
-            tags: ['2024-Present'],
-            description: 'Currently in year 3 of studying computer science and cyber security.'
+            tags: ['Education'],
+            description: 'Currently in my 4th year of studying computer science and cyber security.'
         },
         {
             name: 'HND Computing Science and Cyber Security',
-            tags: ['Aug 2023-May 2024'],
+            tags: ['Education'],
             description: 'Completed a HND in computing science and cyber security.'
         },
         {
             name: 'Developer at Rareloot',
-            tags: ['Aug 2023-May 2024', 'Rareloot'],
+            tags: ['Work'],
             description: 'Worked on Minecraft Marketplace content.',
             links: [{ label: 'Learn More', path: 'https://www.rareloot.at' }]
         },
         {
             name: 'Developer at Lore Studios',
-            tags: ['Sep 2022-Jan 2023'],
+            tags: ['Work'],
             description: 'Worked on Minecraft Marketplace content.',
             links: [{ label: 'Learn More', path: 'https://www.pikistudios.com' }]
         },
         {
             name: 'Developer at Radium Studios',
-            tags: ['Nov 2022-Sep 2023', 'Radium Studios'],
+            tags: ['Nov 2022-Sep 2023'],
             description: 'Worked on Minecraft Marketplace content that was never released due to a lack of funding.',
         },
         {
             name: 'Developer at Eternal Creations',
-            tags: ['Nov 2022-Sep 2024', 'Eternal Creations'],
+            tags: ['Work'],
             description: 'Worked on Minecraft Marketplace content until I was prompoted in 2024.',
             links: [{ label: 'Learn More', path: 'https://eternalcreations.games' }]
         },
         {
             name: 'Netacad CCNAv7',
-            tags: ['May 2022-Mar 2023'],
+            tags: ['Education'],
             description: 'Achieved a certification in networking.',
             links: [{ label: 'Learn More', path: 'https://www.netacad.com' }]
         }
