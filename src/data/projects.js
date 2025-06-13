@@ -105,6 +105,17 @@ export default {
     ],
     marketplace: [
         {
+            name: 'Biome Craft',
+            tags: ['Addon', '2025', 'Eternal Creations'],
+            description: 'Seamlessly integrates custom biomes into Minecraft.',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: '/PortfolioSite/#/marketplace/biome_craft_addon'
+                }
+            ]
+        },
+        {
             name: 'More Enchantments',
             tags: ['Addon', '2025', 'Eternal Creations'],
             description: 'A Minecraft mod that adds a variety of new enchantments.',
