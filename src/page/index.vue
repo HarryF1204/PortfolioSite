@@ -40,7 +40,7 @@ import ProjectCategory from '@components/ProjectCategory.vue';
 
 
 const categories = [
-    { title: 'Experiences', type: 'experiences' },
+    { title: 'Experience', type: 'experiences' },
     { title: 'Marketplace Projects', type: 'marketplace' },
     { title: 'Personal Projects', type: 'personal' }
 ];

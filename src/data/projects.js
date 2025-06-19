@@ -57,6 +57,10 @@ export default {
                 {
                     label: 'Learn More',
                     path: '/PortfolioSite/#/marketplace/biome_craft_addon'
+                },
+                {
+                    label: 'Download',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp/blocklab-studios/biomecraft-add--on-1.0/5753fc95-7022-400c-a0d4-576d07ecc2aa'
                 }
             ]
         },

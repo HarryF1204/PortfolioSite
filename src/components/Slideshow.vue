@@ -1,8 +1,23 @@
 <template>
     <section class="gallery-container">
-        <div class="gallery-grid">
-            <div v-for="(image, index) in images" :key="index" class="gallery-item" @click="openModal(index + 1)">
-                <img :src="image.src" :alt="image.alt">
+        <div class="gallery-grid" :class="{ single: !isModalOpen }">
+            <div v-for="(image, index) in filteredImages" :key="index" class="gallery-item"
+                @click="openModal(index + 1)">
+                <a v-if="image.link" :href="image.link" target="_blank" rel="noopener noreferrer">
+                    <img :src="image.src" :alt="image.alt" :srcset="image.srcset" :sizes="image.sizes">
+                </a>
+                <img v-else :src="image.src" :alt="image.alt" :srcset="image.srcset" :sizes="image.sizes">
+            </div>
+        </div>
+
+        <!-- non-modal slideshow controls -->
+        <div v-if="!isModalOpen" class="non-modal-controls">
+            <button class="prev" @click="changeSlide(-1)">❮</button>
+            <button class="next" @click="changeSlide(1)">❯</button>
+            <div class="dots">
+                <span v-for="(image, index) in images" :key="index" class="dot"
+                    :class="{ active: currentSlide === index + 1 }" @click="currentSlide = index + 1">
+                </span>
             </div>
         </div>
 
@@ -11,7 +26,10 @@
             <div class="modal-content">
                 <div v-for="(image, index) in images" :key="index" class="slide"
                     :style="{ display: currentSlide === index + 1 ? 'block' : 'none' }">
-                    <img :src="image.src" :alt="image.alt">
+                    <a v-if="image.link" :href="image.link" target="_blank" rel="noopener noreferrer">
+                        <img :src="image.src" :alt="image.alt" :srcset="image.srcset" :sizes="image.sizes">
+                    </a>
+                    <img v-else :src="image.src" :alt="image.alt" :srcset="image.srcset" :sizes="image.sizes">
                 </div>
                 <button class="prev" @click="changeSlide(-1)">❮</button>
                 <button class="next" @click="changeSlide(1)">❯</button>
@@ -40,6 +58,15 @@ export default {
             isModalOpen: false
         }
     },
+    computed: {
+        filteredImages() {
+            // outside full-screen, only show the current slide;
+            // when modal is open, show all images (they'll be behind the overlay)
+            return this.isModalOpen
+                ? this.images
+                : [this.images[this.currentSlide - 1]];
+        }
+    },
     methods: {
         openModal(index) {
             this.isModalOpen = true;
@@ -56,7 +83,7 @@ export default {
                 newSlide = 1;
             }
             if (newSlide < 1) {
-                newSlide = this.images.length;
+                this.images.length;
             }
             this.currentSlide = newSlide;
         }
@@ -75,6 +102,8 @@ export default {
 .gallery-container {
     max-width: 800px;
     margin: 2rem auto;
+    padding-bottom: 2rem;
+    /* ensure space under single image */
 }
 
 .gallery-grid {
@@ -84,6 +113,12 @@ export default {
     overflow: hidden;
     border-radius: 8px;
     background-color: white;
+}
+
+.gallery-grid.single {
+    grid-template-columns: 1fr;
+    overflow: visible;
+    /* allow the tall image to expand */
 }
 
 .gallery-item {
@@ -103,15 +138,27 @@ export default {
     transition: background 0.3s ease;
 }
 
-.gallery-item:hover::after {
-    background: rgba(0, 0, 0, 0.3);
-}
+
 
 .gallery-item img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     display: block;
+}
+
+/* override in single-image (non-modal) view */
+.gallery-grid.single .gallery-item {
+    overflow: visible;
+}
+
+.gallery-grid.single .gallery-item img {
+    height: auto;
+    /* allow full natural height */
+    max-height: 80vh;
+    /* constrain to viewport height if needed */
+    object-fit: contain;
+    /* preserve aspect ratio */
 }
 
 .modal {
@@ -201,6 +248,37 @@ export default {
 .dot.active,
 .dot:hover {
     background-color: #333;
+}
+
+.non-modal-controls {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    pointer-events: none;
+}
+
+.non-modal-controls .prev,
+.non-modal-controls .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: auto;
+}
+
+.non-modal-controls .prev {
+    left: 0;
+}
+
+.non-modal-controls .next {
+    right: 0;
+}
+
+.non-modal-controls .dots {
+    position: absolute;
+    bottom: -1.5rem;
+    width: 100%;
+    text-align: center;
+    pointer-events: auto;
 }
 
 @media (max-width: 768px) {
