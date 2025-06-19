@@ -14,9 +14,9 @@
 <script setup>
 import Projects from './Projects.vue';
 import ShowMoreCard from './ShowMoreCard.vue';
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 
-defineProps({
+const props = defineProps({
     title: {
         type: String,
         required: true
@@ -33,10 +33,9 @@ defineProps({
 
 defineEmits(['toggle']);
 
-const INITIAL_ITEMS = 5;
-const LOAD_MORE_COUNT = 6;
-
-const visibleItems = ref(INITIAL_ITEMS);
+const INITIAL_ITEMS = ref(5);
+const LOAD_MORE_COUNT = ref(6);
+const visibleItems = ref(INITIAL_ITEMS.value);
 const totalItems = ref(0);
 
 const updateTotalItems = (count) => {
@@ -47,8 +46,27 @@ const hasMoreToShow = computed(() => {
     return visibleItems.value < totalItems.value;
 });
 
+const detectMobile = () => window.innerWidth <= 480;
+
+const updateLoadMoreCount = () => {
+    if (detectMobile()) {
+        LOAD_MORE_COUNT.value = 3;
+    } else {
+        LOAD_MORE_COUNT.value = 6;
+    }
+};
+
+onMounted(() => {
+    if (detectMobile()) {
+        INITIAL_ITEMS.value = 3;
+        visibleItems.value = 3;
+    }
+    updateLoadMoreCount();
+    window.addEventListener('resize', updateLoadMoreCount);
+});
+
 const loadMore = () => {
-    visibleItems.value = Math.min(visibleItems.value + LOAD_MORE_COUNT, totalItems.value);
+    visibleItems.value = Math.min(visibleItems.value + LOAD_MORE_COUNT.value, totalItems.value);
 };
 </script>
 
@@ -99,9 +117,7 @@ const loadMore = () => {
     max-height: none;
     opacity: 1;
     pointer-events: auto;
-    /* Re-enable interactions */
     visibility: visible;
-    /* Make visible again */
 }
 
 @media (max-width: 768px) {
