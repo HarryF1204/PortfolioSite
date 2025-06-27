@@ -15,7 +15,6 @@
     <main class="content-wrapper">
         <section id="projects">
             <div class="project-controls">
-                <h2>Projects</h2>
                 <div class="category-filters no-select">
                     <button v-for="category in ['all', ...categories.map(c => c.type)]" :key="category"
                         class="filter-btn" :class="{ active: activeCategory === category }"

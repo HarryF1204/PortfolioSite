@@ -1,10 +1,11 @@
 <template>
-    <div class="category-header" @click="$emit('toggle', type)">
+    <!-- <div class="category-header" @click="$emit('toggle', type)">
         <h3>{{ title }}</h3>
         <button class="toggle-btn no-select" aria-label="Toggle category">
             <span class="arrow" :class="{ 'arrow-collapsed': !isExpanded }">▼</span>
         </button>
-    </div>
+    </div> -->
+    <h2>{{ title }}</h2>
     <div class="project-grid" :class="{ 'expanded': isExpanded }">
         <Projects :type="type" :limit="visibleItems" @total-items="updateTotalItems" />
         <ShowMoreCard v-if="hasMoreToShow" @loadMore="loadMore" />
