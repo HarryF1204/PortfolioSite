@@ -6,7 +6,7 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm <span style="color: var(--accent-color)">Kirby</span></h1>
+            <h1>Hi, I'm <span style="color: var(--accent-color)">Harry</span></h1>
             <p>{string} Something pretencious about development.</p>
             <button class="btn" @click="scrollToProjects">View My Work</button>
         </div>
@@ -188,16 +188,24 @@ body {
 
 .filter-btn {
     padding: 0.5rem 1rem;
-    border: none;
     border-radius: 20px;
+    border: 1px solid #ddd;
     background: white;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .filter-btn.active {
-    background: #333;
+    background: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    color: #ddd;
+}
+
+.filter-btn:hover {
+    background: var(--accent-color);
+    border: 1px solid var(--accent-color);
     color: white;
+    transition: background 0.3s, color 0.3s;
 }
 
 .project-category {
