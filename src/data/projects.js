@@ -51,7 +51,7 @@ export default {
     marketplace: [
         {
             name: 'Biome Craft',
-            tags: ['Addon', '2025', 'Eternal Creations'],
+            tags: ['Addon'],
             description: 'Seamlessly integrates custom biomes into Minecraft.',
             links: [
                 {
@@ -66,7 +66,7 @@ export default {
         },
         {
             name: 'More Enchantments',
-            tags: ['Addon', '2025', 'Eternal Creations'],
+            tags: ['Addon'],
             description: 'A Minecraft mod that adds a variety of new enchantments.',
             links: [
                 {
@@ -81,7 +81,7 @@ export default {
         },
         {
             name: 'Theia Dimension',
-            tags: ['Map', '2024', 'Eternal Creations'],
+            tags: ['Map'],
             description: 'Adds a new dimension to minecraft with new biomes, mobs, and structures.',
             links: [
                 {
@@ -96,7 +96,7 @@ export default {
         },
         {
             name: 'Monster Trainer',
-            tags: ['Map', '2025', 'Eternal Creations'],
+            tags: ['Map'],
             description: 'A Minecraft map where you can train and battle monsters.',
             links: [
                 {
@@ -107,7 +107,7 @@ export default {
         },
         {
             name: 'Mutant Mob Survival',
-            tags: ['Map', '2024', 'Eternal Creations'],
+            tags: ['Map'],
             description: 'A Minecraft map with where you must use new weapons to survive against mutant mobs.',
             links: [
                 {
@@ -118,7 +118,7 @@ export default {
         },
         {
             name: 'Merge TNT',
-            tags: ['Map', '2024', 'Lore Studios'],
+            tags: ['Map'],
             description: 'A Minecraft map containing 30+ unique TNTs',
             links: [
                 {
@@ -129,7 +129,7 @@ export default {
         },
         {
             name: 'Bank Heist',
-            tags: ['Map', '2024', 'Rareloot'],
+            tags: ['Map'],
             description: 'A Minecraft map where you can use a series of unique tools to perform a heist.',
             links: [
                 {
@@ -140,7 +140,7 @@ export default {
         },
         {
             name: 'Portal Unlimited',
-            tags: ['Map', '2023', 'Eternal Creations'],
+            tags: ['Map'],
             description: 'A Minecraft map adding 4 types of portal guns to the game.',
             links: [
                 {
@@ -151,7 +151,7 @@ export default {
         },
         {
             name: 'New Year LuckyGifts',
-            tags: ['Map', '2023', 'Lore Studios'],
+            tags: ['Map'],
             description: 'A Minecraft map containing a search for all of the lost gifts.',
             links: [
                 {
@@ -162,7 +162,7 @@ export default {
         },
         {
             name: 'Adopt Me',
-            tags: ['Map', '2023', 'Enchanted'],
+            tags: ['Map'],
             description: 'Worked as a freelance developer for Enchanted where I bug fixed one of their maps',
             links: [
                 { label: 'Download', path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=83c314cf-6435-4a13-99ac-73fa2960498d' }
@@ -172,12 +172,12 @@ export default {
     personal: [
         {
             name: 'The Bedrock Notebook',
-            tags: ['Documentation', 'Minecraft', 'Vitepress'],
+            tags: ['Documentation Site'],
             description: 'A documentation site containing advanced and previously undocumented aspects of the Bedrock modding environment.',
             links: [
                 {
                     label: 'Visit',
-                    path: 'https://harryf1204.github.io/Bedrock-Notebook/'
+                    path: 'https://www.the-bedrock-notebook.dev'
                 },
                 {
                     label: 'GitHub',
@@ -187,7 +187,7 @@ export default {
         },
         {
             name: 'Knotsapp',
-            tags: ['Vue.js', 'Node.js', 'Express', 'Websockets', 'Azure', 'CosmosDB'],
+            tags: ['Full Stack'],
             description: 'A secure messaging app with E2EE and ephemeral keys.',
             links: [
                 {
@@ -198,7 +198,7 @@ export default {
         },
         {
             name: 'Bedrock Micro Addons',
-            tags: ['Minecraft', 'Addon'],
+            tags: ['Addon'],
             description: 'A collection of small addons POCs that add new features to Minecraft.',
             links: [
                 {
@@ -209,7 +209,7 @@ export default {
         },
         {
             name: 'bedrockAPI',
-            tags: ['Python', 'Websockets', 'Minecraft'],
+            tags: ['Websockets'],
             description: 'A python package for interacting with Minecraft Bedrock via a websocket hook.',
             links: [
                 {
