@@ -5,10 +5,13 @@
             <span class="arrow" :class="{ 'arrow-collapsed': !isExpanded }">▼</span>
         </button>
     </div> -->
-    <h2>{{ title }}</h2>
-    <div class="project-grid" :class="{ 'expanded': isExpanded }">
-        <Projects :type="type" :limit="visibleItems" @total-items="updateTotalItems" />
-        <ShowMoreCard v-if="hasMoreToShow" @loadMore="loadMore" />
+    <div id="container">
+        <h2>{{ title }}</h2>
+        <hr />
+        <div class="project-grid" :class="{ 'expanded': isExpanded }">
+            <Projects :type="type" :limit="visibleItems" @total-items="updateTotalItems" />
+            <ShowMoreCard v-if="hasMoreToShow" @loadMore="loadMore" />
+        </div>
     </div>
 </template>
 
@@ -72,6 +75,14 @@ const loadMore = () => {
 </script>
 
 <style scoped>
+#container {
+    margin-top: 5em;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
 .category-header {
     display: flex;
     justify-content: space-between;
