@@ -192,7 +192,7 @@ export default {
             links: [
                 {
                     label: 'Learn More',
-                    path: '/PortfolioSite/#/school/knotsapp'
+                    path: '/PortfolioSite/#/personal/knotsapp'
                 }
             ]
         },

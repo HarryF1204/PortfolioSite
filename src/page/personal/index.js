@@ -9,6 +9,11 @@ export default [
                 path: 'bedrock_micro_addons',
                 name: 'Bedrock Micro Addons',
                 component: () => import('./bedrock_micro_addons.md')
+            },
+            {
+                path: 'knotsapp',
+                name: 'Knotsapp',
+                component: () => import('./knotsapp.md')
             }
         ]
     }
