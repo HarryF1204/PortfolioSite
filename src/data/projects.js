@@ -2,7 +2,7 @@ export default {
     experiences: [
         {
             name: 'Lead Developer at Eternal Creations',
-            tags: ['Work'],
+            tags: ['Sep 2024-Present'],
             description: 'Lead developer working on Minecraft Marketplace content.',
             links: [
                 { label: 'Learn More', path: 'https://eternalcreations.games' }
@@ -10,23 +10,23 @@ export default {
         },
         {
             name: 'BSc Computer Science With CyberSecurity',
-            tags: ['Education'],
+            tags: ['2024-Present'],
             description: 'Currently in my 4th year of studying computer science and cyber security.'
         },
         {
             name: 'HND Computing Science and Cyber Security',
-            tags: ['Education'],
+            tags: ['Aug 2023-May 2024'],
             description: 'Completed a HND in computing science and cyber security.'
         },
         {
             name: 'Developer at Rareloot',
-            tags: ['Work'],
+            tags: ['Aug 2023-May 2024'],
             description: 'Worked on Minecraft Marketplace content.',
             links: [{ label: 'Learn More', path: 'https://www.rareloot.at' }]
         },
         {
             name: 'Developer at Lore Studios',
-            tags: ['Work'],
+            tags: ['Sep 2022-Jan 2023'],
             description: 'Worked on Minecraft Marketplace content.',
             links: [{ label: 'Learn More', path: 'https://www.pikistudios.com' }]
         },
@@ -37,13 +37,13 @@ export default {
         },
         {
             name: 'Developer at Eternal Creations',
-            tags: ['Work'],
+            tags: ['Nov 2022-Sep 2024'],
             description: 'Worked on Minecraft Marketplace content until I was prompoted in 2024.',
             links: [{ label: 'Learn More', path: 'https://eternalcreations.games' }]
         },
         {
             name: 'Netacad CCNAv7',
-            tags: ['Education'],
+            tags: ['May 2022-Mar 2023'],
             description: 'Achieved a certification in networking.',
             links: [{ label: 'Learn More', path: 'https://www.netacad.com' }]
         }
