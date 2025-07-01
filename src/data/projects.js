@@ -1,5 +1,5 @@
 export default {
-    experiences: [
+    experience: [
         {
             name: 'Lead Developer at Eternal Creations',
             tags: ['Sep 2024-Present'],

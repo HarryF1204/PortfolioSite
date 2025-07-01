@@ -1,7 +1,7 @@
 <template>
     <nav class="nav">
         <div class="logo">Portfolio</div>
-        <!-- <button class="btn">Contact</button> -->
+        <button class="btn" @click="scrollToContacts">Contact Me</button>
     </nav>
 
     <section class="hero">
@@ -31,16 +31,21 @@
             </div>
         </section>
     </main>
+
+    <div id="contacts">
+        <GetInTouch></GetInTouch>
+    </div>
 </template>
 
 <script setup>
 import { ref, computed } from 'vue';
 import ProjectCategory from '@components/ProjectCategory.vue';
+import GetInTouch from '@components/GetInTouch.vue';
 
 
 const categories = [
-    { title: 'Experience', type: 'experiences' },
-    { title: 'Marketplace Projects', type: 'marketplace' },
+    { title: 'Experience', type: 'experience' },
+    { title: 'Bedrock Marketplace Projects', type: 'marketplace' },
     { title: 'Personal Projects', type: 'personal' }
 ];
 
@@ -66,6 +71,13 @@ const filteredCategories = computed(() => {
     }
     return categories.filter(category => category.type === activeCategory.value);
 });
+
+const scrollToContacts = () => {
+    const contactsSection = document.getElementById('contacts');
+    if (contactsSection) {
+        contactsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 
 const scrollToProjects = () => {
     const projectsSection = document.getElementById('projects');
