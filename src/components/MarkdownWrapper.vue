@@ -1,6 +1,6 @@
 <template>
     <div class="project-view">
-        <button class="back-button" @click="this.$router.push('/')">← Back</button>
+        <a class="back-button" :href="'/PortfolioSite/#/'">&larr; Back</a>
         <div class="article">
             <router-view />
         </div>
@@ -9,7 +9,7 @@
 
 <script setup>
 import { useRouter } from 'vue-router';
-const router = useRouter();
+useRouter();
 </script>
 
 <style scoped>
