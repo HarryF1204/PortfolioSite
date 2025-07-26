@@ -1,48 +1,42 @@
 <template>
-    <Card class="show-more-card" @click="$emit('loadMore')">
-        <template v-slot:content>
-            <div class="show-more-content">
-                <div class="center-content">
-                    <span class="plus">+</span>
-                    <p>Show More</p>
-                </div>
-            </div>
-        </template>
-    </Card>
+    <button class="show-more-button" @click="$emit('loadMore')">
+        <span class="plus">+</span>
+        <span class="text">Show More</span>
+    </button>
 </template>
 
 <script setup>
-import Card from '@/components/Card.vue';
 </script>
 
 <style scoped>
-.show-more-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    min-height: 12.5rem;
+.show-more-button {
+    width: 100%;
+    padding: 1rem;
+    background: none;
+    border: 2px dashed #666;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.center-content {
-    text-align: center;
+.show-more-button:hover {
+    background: rgba(102, 102, 102, 0.1);
 }
 
 .plus {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
     color: #666;
     display: block;
+    margin-bottom: 0.5rem;
+}
+
+.text {
+    color: #666;
 }
 
 @media (max-width: 480px) {
-    .show-more-content {
-        min-height: 5rem;
-    }
-
-    :deep(.content-container) {
-        max-height: none !important;
-        overflow: hidden !important;
+    .show-more-button {
+        padding: 0.5rem;
     }
 }
 </style>

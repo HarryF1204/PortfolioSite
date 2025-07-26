@@ -9,6 +9,7 @@
             <h1>Hi, I'm <span style="color: var(--accent-color)">Harry</span></h1>
             <p>{string} Something pretencious about development.</p>
             <button class="btn" @click="scrollToProjects">View My Work</button>
+            <button class="exp-btn" @click="goToExperience">Check Out My Experience</button>
         </div>
     </section>
 
@@ -39,13 +40,15 @@
 
 <script setup>
 import { ref, computed } from 'vue';
+import { useRouter } from 'vue-router';
 import ProjectCategory from '@components/ProjectCategory.vue';
 import GetInTouch from '@components/GetInTouch.vue';
+import experiences from './experiences.vue';
 
+const router = useRouter();
 
 const categories = [
-    { title: 'Experience', type: 'experience' },
-    { title: 'Bedrock Marketplace Projects', type: 'marketplace' },
+    { title: 'Minecraft Bedrock Projects', type: 'minecraft' },
     { title: 'Personal Projects', type: 'personal' }
 ];
 
@@ -84,6 +87,10 @@ const scrollToProjects = () => {
     if (projectsSection) {
         projectsSection.scrollIntoView({ behavior: 'smooth' });
     }
+};
+
+const goToExperience = () => {
+    router.push('/experience');
 };
 </script>
 
@@ -126,6 +133,22 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+
+.exp-btn {
+    padding: 0.68rem 2rem;
+    margin-left: 0.5rem;
+    background: transparent;
+    color: var(--accent-color);
+    border: 2px dotted var(--accent-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.exp-btn:hover {
+    transform: translateY(-3px);
 }
 
 .btn:hover {

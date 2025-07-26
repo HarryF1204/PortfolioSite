@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import Projects from './Projects.vue';
+import Projects from './ProjectCard.vue';
 import ShowMoreCard from './ShowMoreCard.vue';
 import { ref, computed, onMounted } from 'vue';
 
@@ -75,10 +75,6 @@ const loadMore = () => {
 </script>
 
 <style scoped>
-#container {
-    margin-top: 5em;
-}
-
 h2 {
     margin-bottom: 0;
 }
@@ -112,17 +108,17 @@ h2 {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    max-height: 0;
-    opacity: 0;
+    max-height: none;
+    opacity: 1;
     transition: all 0.3s ease;
-    overflow: hidden;
-    pointer-events: none;
+    overflow: visible;
+    pointer-events: auto;
     position: relative;
-    visibility: hidden;
+    visibility: visible;
 }
 
 .project-grid.expanded {
@@ -130,6 +126,13 @@ h2 {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+}
+
+@media (max-width: 1200px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -143,6 +146,7 @@ h2 {
     }
 
     .project-grid {
+        grid-template-columns: 1fr;
         gap: 1rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -152,7 +156,7 @@ h2 {
 @media (max-width: 480px) {
     .project-grid {
         grid-template-columns: 1fr;
-        gap: 0.5rem;
+        gap: 1rem;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
