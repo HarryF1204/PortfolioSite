@@ -17,13 +17,11 @@
                     <slot name="description" />
                 </div>
             </section>
-            <section class="tags-section">
+            <section class="actions-and-tags-section">
                 <div class="tags">
                     <slot name="tags" />
                 </div>
                 <div class="toggle-tags" v-if="false" onclick="console.log('toggling tags')">+ Show More</div>
-            </section>
-            <section class="actions-section">
                 <div class="actions">
                     <slot name="links" />
                 </div>
@@ -43,13 +41,14 @@ export default {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     background-color: white;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     width: 100%;
-    height: 26rem;
+    height: auto;
 }
 
 .card:hover {
@@ -101,24 +100,16 @@ export default {
     padding-top: 0
 }
 
-.title-section {
-    height: 2rem;
-    margin-bottom: 1.5rem;
+.title-section,
+.description-section,
+.tags-section,
+.actions-and-tags-section {
+    height: auto;
 }
 
-.description-section {
-    height: 4.2rem;
-    margin-bottom: 1rem;
-}
 
-.tags-section {
-    height: 2.5rem;
-    overflow: hidden;
-}
-
-.actions-section {
+.actions-and-tags-section {
     margin-top: auto;
-    height: 2.5rem;
 }
 
 .title {
