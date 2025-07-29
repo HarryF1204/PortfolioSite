@@ -83,7 +83,7 @@ export default {
         links: [
             {
                 label: 'Learn More',
-                path: 'https://eternalcreations.games/games/monster-trainer'
+                path: 'https://eternalcreations.games/games/biomecraft'
             },
             {
                 label: 'Purchase',
