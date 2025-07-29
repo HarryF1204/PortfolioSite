@@ -10,11 +10,11 @@ These are small addon ideas I decided to make as proof of concepts or as small a
 
 ## Portal-View Rendering
 Uses advanced material techniques to render a 3D model through a "portal" while hiding entities and blocks within the area.
-<YoutubeEmbed videoId="lKcXRd77Mtc"/>
+<YoutubeEmbed videoId="HjLSn3Fd73k"/>
 
 ## Pocket Dimension Skybox Demo
 A modified version of my skybox tech allowing for world geometry outside of a specified area to be entirely hidden, creating the illusion of a "pocket dimension" with it's own custom skybox.
-<YoutubeEmbed videoId="HjLSn3Fd73k"/>
+<YoutubeEmbed videoId="lKcXRd77Mtc"/>
 
 ## Custom Potions
 Custom UI allowing for custom potion effects to be displayed on the HUD.
