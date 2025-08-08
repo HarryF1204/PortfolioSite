@@ -57,140 +57,155 @@ export default {
     //         links: [{ label: 'Learn More', path: 'https://www.netacad.com' }]
     //     }
     // ],
-    minecraft: [{
-        name: 'Monster Trainer',
-        type: 'Map',
-        tags: ['Map', 'UI'],
-        description: 'Build a team of unique monsters to battle against arena trainers around the map.',
-        image: './images/marketplace_thumbnails/monster_trainer.jpg',
-        links: [
-            {
-                label: 'Learn More',
-                path: 'https://eternalcreations.games/games/monster-trainer'
-            },
-            {
-                label: 'Purchase',
-                path: 'https://www.minecraft.net/en-us/marketplace/pdp/blocklab-studios/monster-trainer/12f0c054-73f3-441b-bda9-03761feb0b68'
-            }
-        ]
-    },
-    {
-        name: 'Biome Craft',
-        tags: ['World Gen'],
-        description: 'Seamlessly adds 6 new custom biomes including blocks, items, tools, and mobs into Minecraft Bedrock.',
-        image: './images/marketplace_thumbnails/biome_craft.jpg',
-        type: 'Addon',
-        links: [
-            {
-                label: 'Learn More',
-                path: 'https://eternalcreations.games/games/biomecraft'
-            },
-            {
-                label: 'Purchase',
-                path: 'https://www.minecraft.net/en-us/marketplace/pdp/blocklab-studios/biomecraft-add--on-1.0/5753fc95-7022-400c-a0d4-576d07ecc2aa'
-            }
-        ]
-    },
-    {
-        name: 'More Enchantments',
-        type: 'Addon',
-        tags: [],
-        description: 'Brings a new enchantment table capable of adding 20+ new enchantments to equipment from both vanilla minecraft and addons.',
-        image: './images/marketplace_thumbnails/more_enchantments.avif',
-        links: [
-            {
-                label: 'Learn More',
-                path: 'https://eternalcreations.games/games/more-enchants'
-            },
-            {
-                label: 'Purchase',
-                path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=dfa41d12-3d83-4e4c-b3f0-dd5e91e85340'
-            }
-        ]
-    },
-    {
-        name: 'Theia Dimension',
-        type: 'Map',
-        tags: [],
-        description: 'Adds a new dimension to minecraft with new biomes, mobs, and structures.',
-        image: './images/marketplace_thumbnails/theia_dimension.avif',
-        links: [
-            {
-                label: 'Learn More',
-                path: 'https://eternalcreations.games/games/theia-dimension'
-            },
-            {
-                label: 'Purchase',
-                path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=c3ae311a-5209-495d-b019-985aecb952dd'
-            }
-        ]
-    },
-    {
-        name: 'Merge TNT',
-        type: 'Map',
-        tags: [],
-        description: 'Adds 33 new TnT variants with 3 maps to destroy.',
-        image: './images/marketplace_thumbnails/merge_tnt.jpg',
-        links: [
-            {
-                label: 'Purchase',
-                path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=eac5f57e-97ad-43c6-b4dc-8ecea2d057a0'
-            }
-        ]
-    },
-    {
-        name: 'Mutant Mob Survival',
-        type: 'Map',
-        tags: [],
-        description: 'A survival map containing mutant mobs and new weapons.',
-        image: './images/marketplace_thumbnails/mutant_mob_survival.jpg',
-        links: [
-            {
-                label: 'Purchase',
-                path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=8db95d2b-4dec-4f6d-9421-98a973b5086f'
-            }
-        ]
-    },
+    minecraft: [
+        {
+            name: 'Warden Add-on',
+            type: 'Addon',
+            tags: [],
+            description: 'Adds new warden themed mobs, tools, armour and a new boss to the game.',
+            image: './images/marketplace_thumbnails/warden.jpg',
+            links: [
+                {
+                    label: 'Purchased',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp/plank/warden-add--on-1.0/93f4530f-fc72-4eb4-86c9-8d58734d179e'
+                }
+            ]
+        },
 
-    {
-        name: 'Bank Heist',
-        type: 'Map',
-        tags: [],
-        description: 'A Minecraft map where you can use a series of unique tools to circumvent a banks security features.',
-        image: './images/marketplace_thumbnails/bank_heist.jpg',
-        links: [
-            {
-                label: 'Purchase',
-                path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=11d726b3-b370-4651-b752-b384cd1cd5d7'
-            }
-        ]
-    },
-    {
-        name: 'Portal Unlimited',
-        type: 'Map',
-        tags: [],
-        description: 'A Minecraft map adding 4 types of portal guns to the game.',
-        image: './images/marketplace_thumbnails/portal_unlimited.jpg',
-        links: [
-            {
-                label: 'Purchase',
-                path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=68f6c2ea-7081-4915-b088-c3bfb20170d5'
-            }
-        ]
-    },
-    {
-        name: 'New Year LuckyGifts',
-        type: 'Map',
-        tags: [],
-        description: 'Retrieve all of santas gifts that have been scattered around the map.',
-        image: './images/marketplace_thumbnails/nylg.jpg',
-        links: [
-            {
-                label: 'Purchase',
-                path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=8fe9f5e2-d41b-49aa-82ee-3b5e6751ebd3'
-            }
-        ]
-    }
+        {
+            name: 'Biome Craft',
+            tags: ['World Gen'],
+            description: 'Seamlessly adds 6 new custom biomes including blocks, items, tools, and mobs into Minecraft Bedrock.',
+            image: './images/marketplace_thumbnails/biome_craft.jpg',
+            type: 'Addon',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: 'https://eternalcreations.games/games/biomecraft'
+                },
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp/blocklab-studios/biomecraft-add--on-1.0/5753fc95-7022-400c-a0d4-576d07ecc2aa'
+                }
+            ]
+        },
+        {
+            name: 'More Enchantments',
+            type: 'Addon',
+            tags: [],
+            description: 'Brings a new enchantment table capable of adding 20+ new enchantments to equipment from both vanilla minecraft and addons.',
+            image: './images/marketplace_thumbnails/more_enchantments.avif',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: 'https://eternalcreations.games/games/more-enchants'
+                },
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=dfa41d12-3d83-4e4c-b3f0-dd5e91e85340'
+                }
+            ]
+        },
+        {
+            name: 'Theia Dimension',
+            type: 'Map',
+            tags: [],
+            description: 'Adds a new dimension to minecraft with new biomes, mobs, and structures.',
+            image: './images/marketplace_thumbnails/theia_dimension.avif',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: 'https://eternalcreations.games/games/theia-dimension'
+                },
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=c3ae311a-5209-495d-b019-985aecb952dd'
+                }
+            ]
+        },
+        {
+            name: 'Merge TNT',
+            type: 'Map',
+            tags: [],
+            description: 'Adds 33 new TnT variants with 3 maps to destroy.',
+            image: './images/marketplace_thumbnails/merge_tnt.jpg',
+            links: [
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=eac5f57e-97ad-43c6-b4dc-8ecea2d057a0'
+                }
+            ]
+        },
+        {
+            name: 'Monster Trainer',
+            type: 'Map',
+            tags: ['Map', 'UI'],
+            description: 'Build a team of unique monsters to battle against arena trainers around the map.',
+            image: './images/marketplace_thumbnails/monster_trainer.jpg',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: 'https://eternalcreations.games/games/monster-trainer'
+                },
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp/blocklab-studios/monster-trainer/12f0c054-73f3-441b-bda9-03761feb0b68'
+                }
+            ]
+        },
+        {
+            name: 'Mutant Mob Survival',
+            type: 'Map',
+            tags: [],
+            description: 'A survival map containing mutant mobs and new weapons.',
+            image: './images/marketplace_thumbnails/mutant_mob_survival.jpg',
+            links: [
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=8db95d2b-4dec-4f6d-9421-98a973b5086f'
+                }
+            ]
+        },
+
+        {
+            name: 'Bank Heist',
+            type: 'Map',
+            tags: [],
+            description: 'A Minecraft map where you can use a series of unique tools to circumvent a banks security features.',
+            image: './images/marketplace_thumbnails/bank_heist.jpg',
+            links: [
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=11d726b3-b370-4651-b752-b384cd1cd5d7'
+                }
+            ]
+        },
+        {
+            name: 'Portal Unlimited',
+            type: 'Map',
+            tags: [],
+            description: 'A Minecraft map adding 4 types of portal guns to the game.',
+            image: './images/marketplace_thumbnails/portal_unlimited.jpg',
+            links: [
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=68f6c2ea-7081-4915-b088-c3bfb20170d5'
+                }
+            ]
+        },
+        {
+            name: 'New Year LuckyGifts',
+            type: 'Map',
+            tags: [],
+            description: 'Retrieve all of santas gifts that have been scattered around the map.',
+            image: './images/marketplace_thumbnails/nylg.jpg',
+            links: [
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=8fe9f5e2-d41b-49aa-82ee-3b5e6751ebd3'
+                }
+            ]
+        }
     ],
     personal: [
         {
