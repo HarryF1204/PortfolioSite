@@ -212,7 +212,7 @@ export default {
             name: 'The Bedrock Notebook',
             tags: ['Documentation Site'],
             description: 'A documentation site containing advanced and previously undocumented aspects of the Bedrock modding environment.',
-            image: './images/personal/bedrock-notebook.jpg',
+            image: './images/personal_thumbnails/bedrock_notebook.png',
             links: [
                 {
                     label: 'Visit',
@@ -240,7 +240,7 @@ export default {
             name: 'Bedrock Micro Addons',
             tags: ['Addon'],
             description: 'A collection of small addons POCs that add new features to Minecraft.',
-            image: './images/personal/micro-addons.jpg',
+            image: './images/personal_thumbnails/micro_addons.png',
             links: [
                 {
                     label: 'Learn More',
