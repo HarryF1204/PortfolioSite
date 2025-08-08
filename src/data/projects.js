@@ -66,7 +66,7 @@ export default {
             image: './images/marketplace_thumbnails/warden.jpg',
             links: [
                 {
-                    label: 'Purchased',
+                    label: 'Purchase',
                     path: 'https://www.minecraft.net/en-us/marketplace/pdp/plank/warden-add--on-1.0/93f4530f-fc72-4eb4-86c9-8d58734d179e'
                 }
             ]
