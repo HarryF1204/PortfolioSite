@@ -107,10 +107,10 @@ export default {
             ]
         },
         {
-            name: 'More Enchantments',
+            name: 'More Enchants',
             type: 'Addon',
             tags: [],
-            description: 'Brings a new enchantment table capable of adding 20+ new enchantments to equipment from both vanilla minecraft and addons.',
+            description: 'Brings a new enchantment table capable of adding 40+ new enchantments to equipment from both vanilla minecraft and addons.',
             image: './images/marketplace_thumbnails/more_enchantments.avif',
             links: [
                 {
