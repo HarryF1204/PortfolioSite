@@ -59,6 +59,23 @@ export default {
     // ],
     minecraft: [
         {
+            name: 'Vibrant Adventures',
+            type: 'Map',
+            tags: ['Microsoft Commission Project'],
+            description: 'An free adventure map commissioned by Microsoft following the restoration of a dying sakura tree.',
+            image: './images/marketplace_thumbnails/vibrant_adventures.jpg',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: 'https://www.minecraft.net/en-us/article/vibrant-visuals-in-minecraft-marketplace'
+                },
+                {
+                    label: 'Download',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp/minecraft/vibrant-adventures/f85c0b48-e3aa-4156-af13-dec7537e79ae'
+                }
+            ]
+        },
+        {
             name: 'Warden Add-on',
             type: 'Addon',
             tags: [],
