@@ -79,7 +79,7 @@ export default {
             name: 'Warden Add-on',
             type: 'Addon',
             tags: [],
-            description: 'Adds new warden themed mobs, tools, armour and a new boss to the game.',
+            description: 'A commission project for Plank Digital that adds new warden themed mobs, tools, armour and a new boss to the game.',
             image: './images/marketplace_thumbnails/warden.jpg',
             links: [
                 {
