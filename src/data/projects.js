@@ -76,6 +76,22 @@ export default {
             ]
         },
         {
+            name: 'Item Physics & More Add-On',
+            type: 'Addon',
+            tags: [],
+            description: 'Adds falling trees, dropped item models, and rag dolls.',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: 'https://www.youtube.com/watch?v=rPoOsSwoR0U'
+                },
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp/blocklab-studios/item-physics--more-add--on/448e727e-6440-4518-9967-09db195c7209'
+                }
+            ]
+        },
+        {
             name: 'Warden Add-on',
             type: 'Addon',
             tags: [],
