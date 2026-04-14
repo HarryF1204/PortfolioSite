@@ -80,6 +80,7 @@ export default {
             type: 'Addon',
             tags: [],
             description: 'Adds falling trees, dropped item models, and rag dolls.',
+            image: './images/marketplace_thumbnails/item_physics.jpg',
             links: [
                 {
                     label: 'Learn More',
