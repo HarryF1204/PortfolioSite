@@ -76,6 +76,23 @@ export default {
             ]
         },
         {
+            name: 'Chroma Visuals',
+            type: 'Texture/Shader Pack',
+            tags: [],
+            description: 'A vibrant visuals shader pack with environmental particles',
+            image: './images/marketplace_thumbnails/chroma.webp',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: './images/marketplace_thumbnails/chroma.webp'
+                },
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=2721f5e6-52ac-45e4-8d01-d55f61aa887d'
+                }
+            ]
+        },
+        {
             name: 'Item Physics & More Add-On',
             type: 'Addon',
             tags: [],
@@ -258,18 +275,18 @@ export default {
                 }
             ]
         },
-        {
-            name: 'Knotsapp',
-            tags: ['Full Stack'],
-            description: 'A secure messaging app with E2EE and ephemeral keys.',
-            image: './images/personal_thumbnails/knotsapp.png',
-            links: [
-                {
-                    label: 'Learn More',
-                    path: '/PortfolioSite/#/personal/knotsapp'
-                }
-            ]
-        },
+        // {
+        //     name: 'Knotsapp',
+        //     tags: ['Full Stack'],
+        //     description: 'A secure messaging app with E2EE and ephemeral keys.',
+        //     image: './images/personal_thumbnails/knotsapp.png',
+        //     links: [
+        //         {
+        //             label: 'Learn More',
+        //             path: '/PortfolioSite/#/personal/knotsapp'
+        //         }
+        //     ]
+        // },
         {
             name: 'Bedrock Micro Addons',
             tags: ['Addon'],
@@ -282,17 +299,17 @@ export default {
                 }
             ]
         },
-        {
-            name: 'bedrockAPI',
-            tags: ['Websockets'],
-            description: 'A python package for interacting with Minecraft Bedrock via a websocket hook.',
-            image: './images/personal_thumbnails/bedrock_api.png',
-            links: [
-                {
-                    label: 'GitHub',
-                    path: 'https://github.com/HarryF1204/bedrockAPI'
-                }
-            ]
-        }
+        // {
+        //     name: 'bedrockAPI',
+        //     tags: ['Websockets'],
+        //     description: 'A python package for interacting with Minecraft Bedrock via a websocket hook.',
+        //     image: './images/personal_thumbnails/bedrock_api.png',
+        //     links: [
+        //         {
+        //             label: 'GitHub',
+        //             path: 'https://github.com/HarryF1204/bedrockAPI'
+        //         }
+        //     ]
+        // }
     ]
 };
