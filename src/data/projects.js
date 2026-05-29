@@ -59,19 +59,19 @@ export default {
     // ],
     minecraft: [
         {
-            name: 'Vibrant Adventures',
-            type: 'Map',
-            tags: ['Microsoft Commission Project'],
-            description: 'An free adventure map commissioned by Microsoft following the restoration of a dying sakura tree.',
-            image: './images/marketplace_thumbnails/vibrant_adventures.jpg',
+            name: 'Better Structures v2.0',
+            type: 'Addon',
+            tags: ['World Gen', 'Structures'],
+            description: 'An add-on that upgrades structure generation with improved variants across your world.',
+            image: './images/marketplace_thumbnails/betterstructuresaddon_Thumbnail_0.jpg',
             links: [
                 {
                     label: 'Learn More',
-                    path: 'https://www.minecraft.net/en-us/article/vibrant-visuals-in-minecraft-marketplace'
+                    path: 'https://eternalcreations.games/games/better-structures'
                 },
                 {
-                    label: 'Download',
-                    path: 'https://www.minecraft.net/en-us/marketplace/pdp/minecraft/vibrant-adventures/f85c0b48-e3aa-4156-af13-dec7537e79ae'
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp/blocklab-studios/better-structures-add--on/5e6039aa-a4a1-4508-880c-564129ce04bc'
                 }
             ]
         },
@@ -122,7 +122,23 @@ export default {
                 }
             ]
         },
-
+        {
+            name: 'More Enchants',
+            type: 'Addon',
+            tags: [],
+            description: 'Brings a new enchantment table capable of adding 40+ new enchantments to equipment from both vanilla minecraft and addons.',
+            image: './images/marketplace_thumbnails/more_enchantments.avif',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: 'https://eternalcreations.games/games/more-enchants'
+                },
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=dfa41d12-3d83-4e4c-b3f0-dd5e91e85340'
+                }
+            ]
+        },
         {
             name: 'Biome Craft',
             tags: ['World Gen'],
@@ -141,19 +157,19 @@ export default {
             ]
         },
         {
-            name: 'More Enchants',
-            type: 'Addon',
-            tags: [],
-            description: 'Brings a new enchantment table capable of adding 40+ new enchantments to equipment from both vanilla minecraft and addons.',
-            image: './images/marketplace_thumbnails/more_enchantments.avif',
+            name: 'Vibrant Adventures',
+            type: 'Map',
+            tags: ['Microsoft Commission Project'],
+            description: 'An free adventure map commissioned by Microsoft following the restoration of a dying sakura tree.',
+            image: './images/marketplace_thumbnails/vibrant_adventures.jpg',
             links: [
                 {
                     label: 'Learn More',
-                    path: 'https://eternalcreations.games/games/more-enchants'
+                    path: 'https://www.minecraft.net/en-us/article/vibrant-visuals-in-minecraft-marketplace'
                 },
                 {
-                    label: 'Purchase',
-                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=dfa41d12-3d83-4e4c-b3f0-dd5e91e85340'
+                    label: 'Download',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp/minecraft/vibrant-adventures/f85c0b48-e3aa-4156-af13-dec7537e79ae'
                 }
             ]
         },
