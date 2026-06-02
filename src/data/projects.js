@@ -70,6 +70,10 @@ export default {
                     path: 'https://eternalcreations.games/games/better-structures'
                 },
                 {
+                    label: '2.0 Update',
+                    path: 'https://www.youtube.com/watch?v=I5HjOQWOAIQ'
+                },
+                {
                     label: 'Purchase',
                     path: 'https://www.minecraft.net/en-us/marketplace/pdp/blocklab-studios/better-structures-add--on/5e6039aa-a4a1-4508-880c-564129ce04bc'
                 }
