@@ -144,19 +144,15 @@ export default {
             ]
         },
         {
-            name: 'Biome Craft',
-            tags: ['World Gen'],
-            description: 'Seamlessly adds 6 new custom biomes including blocks, items, tools, and mobs into Minecraft Bedrock.',
-            image: './images/marketplace_thumbnails/biome_craft.jpg',
+            name: 'Security Add-On',
             type: 'Addon',
+            tags: ['Unpaid Work'],
+            description: 'Defend your base with controllable drones, turrets, cameras, traps, weapons, armour, and more.',
+            image: 'https://xforgeassets001.xboxlive.com/pf-namespace-b63a0803d3653643/795b5064-0b55-4782-99eb-77e33400a2e1/SECURITY_ADDON_Thumbnail_0.jpg',
             links: [
                 {
-                    label: 'Learn More',
-                    path: 'https://eternalcreations.games/games/biomecraft'
-                },
-                {
                     label: 'Purchase',
-                    path: 'https://www.minecraft.net/en-us/marketplace/pdp/blocklab-studios/biomecraft-add--on-1.0/5753fc95-7022-400c-a0d4-576d07ecc2aa'
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp?id=49ee44f3-dc34-41aa-9d64-bcade815d4be'
                 }
             ]
         },
@@ -177,6 +173,24 @@ export default {
                 }
             ]
         },
+        {
+            name: 'Biome Craft',
+            tags: ['World Gen'],
+            description: 'Seamlessly adds 6 new custom biomes including blocks, items, tools, and mobs into Minecraft Bedrock.',
+            image: './images/marketplace_thumbnails/biome_craft.jpg',
+            type: 'Addon',
+            links: [
+                {
+                    label: 'Learn More',
+                    path: 'https://eternalcreations.games/games/biomecraft'
+                },
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp/blocklab-studios/biomecraft-add--on-1.0/5753fc95-7022-400c-a0d4-576d07ecc2aa'
+                }
+            ]
+        },
+
         {
             name: 'Theia Dimension',
             type: 'Map',
