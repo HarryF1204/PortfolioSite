@@ -59,11 +59,26 @@ export default {
     // ],
     minecraft: [
         {
+            name: 'Realism Reimagined HD',
+            type: 'Texture Pack',
+            tags: ['HD Textures', 'VFX'],
+            description: 'A 32x HD texture pack with custom mob models and variants, 3D weapons and armour, animated foliage and shader-like VFX.',
+            image: './images/marketplace_thumbnails/realismreimaginedhd_Thumbnail_0.jpg',
+            video: 'sbC7XCGUnMY',
+            links: [
+                {
+                    label: 'Purchase',
+                    path: 'https://www.minecraft.net/en-us/marketplace/pdp/blocklab-studios/realism-reimagined-hd/71dd83ad-7d91-4cfd-9e0a-96e8cfe3d984'
+                }
+            ]
+        },
+        {
             name: 'Better Structures v2.0',
             type: 'Addon',
             tags: ['World Gen', 'Structures'],
             description: 'An add-on that upgrades structure generation with improved variants across your world.',
             image: './images/marketplace_thumbnails/betterstructuresaddon_Thumbnail_0.jpg',
+            video: 'I5HjOQWOAIQ',
             links: [
                 {
                     label: 'Learn More',
@@ -85,6 +100,7 @@ export default {
             tags: [],
             description: 'A vibrant visuals shader pack with environmental particles',
             image: './images/marketplace_thumbnails/chroma.webp',
+            video: 'Jmq-XIDBWDc',
             links: [
                 {
                     label: 'Learn More',
@@ -102,6 +118,7 @@ export default {
             tags: [],
             description: 'Adds falling trees, dropped item models, and rag dolls.',
             image: './images/marketplace_thumbnails/item_physics.jpg',
+            video: 'rPoOsSwoR0U',
             links: [
                 {
                     label: 'Learn More',
@@ -178,6 +195,7 @@ export default {
             tags: ['World Gen'],
             description: 'Seamlessly adds 6 new custom biomes including blocks, items, tools, and mobs into Minecraft Bedrock.',
             image: './images/marketplace_thumbnails/biome_craft.jpg',
+            video: 'vJ_1bDuXBbo',
             type: 'Addon',
             links: [
                 {
@@ -197,6 +215,7 @@ export default {
             tags: [],
             description: 'Adds a new dimension to minecraft with new biomes, mobs, and structures.',
             image: './images/marketplace_thumbnails/theia_dimension.avif',
+            video: '-8J4k7sP19w',
             links: [
                 {
                     label: 'Learn More',
