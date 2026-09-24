@@ -88,6 +88,7 @@ const handleImageError = (event) => {
                 <a v-for="link in card.links" :key="link.path" :href="link.path" class="card-link">
                     {{ link.label }}
                 </a>
+                <span v-if="card.comingSoon" class="coming-soon">{{ card.comingSoon }}</span>
             </template>
         </Card>
     </template>
@@ -187,6 +188,15 @@ const handleImageError = (event) => {
 
 .card-link:hover {
     text-decoration: underline;
+}
+
+/* Outranks Card's `.actions > *` button styling so this reads as plain text */
+.card-height .coming-soon {
+    display: inline-block;
+    padding: 0.5rem 0;
+    background-color: transparent;
+    color: #999;
+    font-style: italic;
 }
 
 @media (max-width: 480px) {

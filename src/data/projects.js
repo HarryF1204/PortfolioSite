@@ -59,6 +59,16 @@ export default {
     // ],
     minecraft: [
         {
+            name: "Archie's Dinos",
+            type: 'Addon',
+            tags: [],
+            description: 'An upcoming dinosaur add-on for Minecraft Bedrock.',
+            image: './images/marketplace_thumbnails/archies_dinos.jpg',
+            video: '7ZwBxmcNIc4',
+            comingSoon: 'Coming 2026',
+            links: []
+        },
+        {
             name: 'Realism Reimagined HD',
             type: 'Texture Pack',
             tags: ['HD Textures', 'VFX'],

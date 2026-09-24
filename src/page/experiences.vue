@@ -94,8 +94,8 @@ const props = defineProps({
         default: () => [
             {
                 name: 'BSc Computer Science With CyberSecurity',
-                date: '2024 – Present',
-                description: 'Currently in my 4th year of studying computer science and cyber security.'
+                date: '2024 – 2026',
+                description: 'Graduated with a BSc in computer science and cyber security.'
             },
             {
                 name: 'HND Computing Science and Cyber Security',
