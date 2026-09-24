@@ -3,7 +3,7 @@
         <div v-if="!videoId" class="error">
             No YouTube video ID found.
         </div>
-        <iframe v-else :src="embedUrl" frameborder="0"
+        <iframe v-else :src="embedUrl" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>

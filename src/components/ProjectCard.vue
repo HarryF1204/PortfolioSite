@@ -37,6 +37,8 @@ watch(filteredProjects, () => {
 const embedUrl = (videoId) =>
     `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`;
 
+const watchUrl = (videoId) => `https://www.youtube.com/watch?v=${videoId}`;
+
 const handleImageError = (event) => {
     // Fallback to a solid color background if image fails to load
     event.target.style.display = 'none';
@@ -57,17 +59,19 @@ const handleImageError = (event) => {
                 <div class="preview-media">
                     <iframe v-if="card.video && playingIndex === index" class="preview-video"
                         :src="embedUrl(card.video)" :title="`${card.name} trailer`" frameborder="0"
+                        referrerpolicy="strict-origin-when-cross-origin"
                         allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <template v-else>
                         <img :src="card.image || './images/default-project.jpg'" :alt="card.name"
                             @error="handleImageError" />
-                        <button v-if="card.video" type="button" class="play-button"
-                            :aria-label="`Play ${card.name} trailer`" @click="playingIndex = index">
+                        <a v-if="card.video" :href="watchUrl(card.video)" target="_blank" rel="noopener"
+                            class="play-button" :aria-label="`Play ${card.name} trailer`"
+                            @click.exact.prevent="playingIndex = index">
                             <svg viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M8 5.5v13l11-6.5z" />
                             </svg>
-                        </button>
+                        </a>
                     </template>
                 </div>
             </template>
