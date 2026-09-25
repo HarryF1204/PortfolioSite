@@ -1,7 +1,7 @@
 <template>
-    <button class="show-more-button" @click="$emit('loadMore')">
+    <button class="show-more-button" @click="$emit('showAll')">
         <span class="plus">+</span>
-        <span class="text">Show More</span>
+        <span class="text">Show All</span>
     </button>
 </template>
 

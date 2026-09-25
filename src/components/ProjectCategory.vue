@@ -10,7 +10,7 @@
         <hr />
         <div class="project-grid" :class="{ 'expanded': isExpanded }">
             <Projects :type="type" :limit="visibleItems" @total-items="updateTotalItems" />
-            <ShowMoreCard v-if="hasMoreToShow" @loadMore="loadMore" />
+            <ShowMoreCard v-if="hasMoreToShow" @showAll="showAll" />
         </div>
     </div>
 </template>
@@ -38,7 +38,6 @@ const props = defineProps({
 defineEmits(['toggle']);
 
 const INITIAL_ITEMS = ref(5);
-const LOAD_MORE_COUNT = ref(6);
 const visibleItems = ref(INITIAL_ITEMS.value);
 const totalItems = ref(0);
 
@@ -52,25 +51,15 @@ const hasMoreToShow = computed(() => {
 
 const detectMobile = () => window.innerWidth <= 480;
 
-const updateLoadMoreCount = () => {
-    if (detectMobile()) {
-        LOAD_MORE_COUNT.value = 3;
-    } else {
-        LOAD_MORE_COUNT.value = 6;
-    }
-};
-
 onMounted(() => {
     if (detectMobile()) {
         INITIAL_ITEMS.value = 3;
         visibleItems.value = 3;
     }
-    updateLoadMoreCount();
-    window.addEventListener('resize', updateLoadMoreCount);
 });
 
-const loadMore = () => {
-    visibleItems.value = Math.min(visibleItems.value + LOAD_MORE_COUNT.value, totalItems.value);
+const showAll = () => {
+    visibleItems.value = totalItems.value;
 };
 </script>
 
@@ -108,7 +97,7 @@ h2 {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -126,6 +115,12 @@ h2 {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+}
+
+@media (max-width: 1400px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 1200px) {
