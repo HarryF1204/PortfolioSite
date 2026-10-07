@@ -2,7 +2,6 @@
 import { computed, ref, watch } from 'vue'
 import data from '@/data/projects.js'
 import Card from '@/components/Card.vue'
-import Tag from '@/components/Tag.vue'
 
 const props = defineProps({
     type: {
@@ -82,10 +81,6 @@ const handleImageError = (event) => {
 
             <template v-slot:description>
                 <p>{{ card.description }}</p>
-            </template>
-
-            <template v-slot:tags>
-                <Tag v-for="tag in card.tags" :key="tag">{{ tag }}</Tag>
             </template>
 
             <template v-slot:links>
