@@ -5,6 +5,7 @@ import marketplaceRoutes from '../page/marketplace/index';
 import personalRoutes from '../page/personal/index';
 import toolRoutes from '../page/personal/index';
 import Experience from '../page/experiences.vue';
+import ExperienceMinecraft from '../page/experiences_minecraft.vue';
 
 const routes = [
     ...marketplaceRoutes,
@@ -19,6 +20,11 @@ const routes = [
         path: '/experience',
         name: 'Experience',
         component: Experience
+    },
+    {
+        path: '/experience/minecraft',
+        name: 'ExperienceMinecraft',
+        component: ExperienceMinecraft
     }
 ]
 
