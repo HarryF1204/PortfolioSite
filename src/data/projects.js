@@ -62,11 +62,15 @@ export default {
             name: "Archie's Dinos",
             type: 'Addon',
             tags: [],
-            description: 'An upcoming dinosaur add-on for Minecraft Bedrock.',
+            description: 'Coming soon to both java and bedrock.',
             image: './images/marketplace_thumbnails/archies_dinos.jpg',
             video: '7ZwBxmcNIc4',
-            comingSoon: 'Coming 2026',
-            links: []
+            links: [
+                {
+                    label: 'Learn More',
+                    path: 'https://www.archieblocks.com/'
+                }
+            ]
         },
         {
             name: 'Realism Reimagined HD',
