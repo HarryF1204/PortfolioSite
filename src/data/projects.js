@@ -64,6 +64,7 @@ export default {
             tags: [],
             description: 'A new experience being created by Eternal Creations in collaboration with Eckosoldier.',
             image: './images/marketplace_thumbnails/Keyart_V2.3.png',
+            video: 'hZe6GpQe1gU',
             comingSoon: 'Coming Soon',
             links: []
         },
