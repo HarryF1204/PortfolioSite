@@ -59,6 +59,15 @@ export default {
     // ],
     minecraft: [
         {
+            name: "Ecko's Hub",
+            type: 'Map',
+            tags: [],
+            description: 'A new experience being created by Eternal Creations in collaboration with Eckosoldier.',
+            image: './images/marketplace_thumbnails/Keyart_V2.3.png',
+            comingSoon: 'Coming Soon',
+            links: []
+        },
+        {
             name: "Archie's Dinos",
             type: 'Addon',
             tags: [],
